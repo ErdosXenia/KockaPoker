@@ -9,20 +9,29 @@ namespace KockaPoker
     class Dobas
     {
         int[] kockak = new int[5];
+        private string eredmeny;
+        public string Eredmeny { 
+            get 
+            {
+                return eredmeny;
+            }
+        }
 
         public Dobas()
         {
 
         }
 
-        /*public Dobas(int k1, int k2, int k3, int k4, int k5)
+        public Dobas(int k1, int k2, int k3, int k4, int k5)
         {
             kockak[0] = k1;
             kockak[1] = k2;
             kockak[2] = k3;
             kockak[3] = k4;
             kockak[4] = k5;
-        }*/
+
+            eredmeny = Erteke();
+        }
 
         public void EgyDobas()
         {
@@ -31,6 +40,7 @@ namespace KockaPoker
             {
                 kockak[i] = rnd.Next(1, 7);
             }
+            eredmeny = Erteke();
         }
 
         public void Kiiras()
@@ -38,10 +48,12 @@ namespace KockaPoker
             foreach (var k in kockak)
             {
                 Console.Write($"{k} ");
+                
             }
+            Console.WriteLine($"-> {eredmeny}");
         }
 
-        public string Erteke()
+        private string Erteke()
         {
             Dictionary<int, int> eredmeny = new Dictionary<int, int>();
 
