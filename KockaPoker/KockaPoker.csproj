@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E4C4235-3939-4CA0-9243-1E98CAF031E3}</ProjectGuid>
+    <ProjectGuid>{00B9D279-E4B7-4F33-AB8F-C4E3FF5A524C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>KockaPoker</RootNamespace>
-    <AssemblyName>KockaPoker</AssemblyName>
+    <RootNamespace>Kockapoker</RootNamespace>
+    <AssemblyName>Kockapoker</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
